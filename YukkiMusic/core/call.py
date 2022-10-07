@@ -243,7 +243,9 @@ class Call(PyTgCalls):
                         original_chat_id, _["call_5"]
                     )
                     if invitelink.startswith("https://t.me/+"):
-                        invitelink = invitelink.replace("+", "").split("t.me/")[1]
+                        invitelink = invitelink.replace(
+                            "https://t.me/+", "https://t.me/joinchat/"
+                        )
                     await asyncio.sleep(3)
                     await userbot.join_chat(invitelink)
                     await asyncio.sleep(4)
