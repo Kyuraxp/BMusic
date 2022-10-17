@@ -19,13 +19,13 @@ async def play_logs(message, streamtype):
         else:
             chatusername = "Private Group"
         logger_text = f"""
-**YUKKI PLAY LOG**
+**KYURA PLAY LOG**
 
-**Chat:** {message.chat.title} [`{message.chat.id}`]
-**User:** {message.from_user.mention}
+**Chats:** {message.chat.title} [`{message.chat.id}`]
+**Nama:** {message.from_user.mention}
 **Username:** @{message.from_user.username}
-**User ID:** `{message.from_user.id}`
-**Chat Link:** {chatusername}
+**ID:** `{message.from_user.id}`
+**Link:** {chatusername}
 
 **Query:** {message.text}
 
